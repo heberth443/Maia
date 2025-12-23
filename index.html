@@ -8,7 +8,7 @@
 <style>
 *{margin:0;padding:0;box-sizing:border-box;}
 
-html,body{
+body{
     background:#0f0f0f;
     color:#fff;
     font-family:Arial,Helvetica,sans-serif;
@@ -17,9 +17,8 @@ html,body{
 /* HEADER */
 header{
     background:linear-gradient(90deg,#ff1e1e,#8b0000);
-    padding:50px 20px 40px;
+    padding:50px 20px;
     text-align:center;
-    border-bottom:4px solid #ff1e1e;
 }
 
 .header-box{
@@ -27,31 +26,25 @@ header{
     padding:25px 40px;
     border:3px solid #fff;
     border-radius:12px;
-    box-shadow:0 0 20px rgba(255,30,30,.8);
-    animation:glow 2s infinite alternate;
-}
-
-@keyframes glow{
-    from{box-shadow:0 0 10px rgba(255,30,30,.4);}
-    to{box-shadow:0 0 35px rgba(255,30,30,1);}
+    box-shadow:0 0 25px rgba(255,30,30,.9);
 }
 
 .logo-header{
-    max-width:260px;
+    max-width:280px;
     width:100%;
-    height:auto;
     margin-bottom:15px;
-    filter:drop-shadow(0 0 12px rgba(255,255,255,.6));
+    filter:drop-shadow(0 0 10px rgba(255,255,255,.6));
 }
 
-header p{font-size:1.2em;}
+header p{
+    font-size:1.2em;
+}
 
 /* CONTAINER */
 .container{
     max-width:1200px;
     margin:auto;
     padding:40px 20px;
-    background:#0f0f0f;
 }
 
 /* BOX */
@@ -64,43 +57,17 @@ header p{font-size:1.2em;}
 /* GRID */
 .grid-produtos{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
     gap:30px;
 }
 
 /* CARD */
 .card-produto{
-    position:relative;
     background:#111;
     border-radius:10px;
     padding:20px;
     display:flex;
     flex-direction:column;
-    animation:subir .8s ease forwards;
-}
-
-@keyframes subir{
-    from{opacity:0;transform:translateY(40px);}
-    to{opacity:1;transform:translateY(0);}
-}
-
-/* SELO */
-.selo{
-    position:absolute;
-    top:15px;
-    left:15px;
-    background:#ff1e1e;
-    padding:6px 12px;
-    font-size:.8em;
-    font-weight:bold;
-    border-radius:5px;
-    animation:piscar 1.2s infinite;
-}
-
-@keyframes piscar{
-    0%{opacity:1;}
-    50%{opacity:.4;}
-    100%{opacity:1;}
 }
 
 .card-produto img{
@@ -110,13 +77,22 @@ header p{font-size:1.2em;}
     background:#fff;
 }
 
-/* TEXTO */
-.card-produto h3{color:#ff1e1e;margin-bottom:10px;}
-.preco-antigo{text-decoration:line-through;color:#ff4d4d;}
-.preco-novo{font-size:1.5em;font-weight:bold;color:#00ff88;}
-.contador{margin:10px 0;font-weight:bold;color:#ffd700;}
+.card-produto h3{
+    color:#ff1e1e;
+    margin-bottom:10px;
+}
 
-/* BOTÕES */
+.preco-antigo{
+    text-decoration:line-through;
+    color:#ff4d4d;
+}
+
+.preco-novo{
+    font-size:1.4em;
+    font-weight:bold;
+    color:#00ff88;
+}
+
 .btn-checkout{
     margin-top:auto;
     background:#ff1e1e;
@@ -126,14 +102,6 @@ header p{font-size:1.2em;}
     text-decoration:none;
     border-radius:8px;
     font-weight:bold;
-}
-
-.btn-off{
-    margin-top:auto;
-    background:#444;
-    padding:14px;
-    text-align:center;
-    border-radius:8px;
 }
 
 /* WHATSAPP */
@@ -146,25 +114,11 @@ header p{font-size:1.2em;}
     background:#25d366;
     color:#000;
     padding:18px 40px;
-    font-size:1.3em;
+    font-size:1.2em;
     font-weight:bold;
     text-decoration:none;
     border-radius:10px;
     display:inline-block;
-}
-
-/* HORÁRIO */
-.horario-atendimento{
-    color:#ffd700;
-    text-shadow:0 0 10px rgba(255,215,0,.7);
-    font-weight:bold;
-    animation:pulse 1.5s infinite;
-}
-
-@keyframes pulse{
-    0%{opacity:1;}
-    50%{opacity:.6;}
-    100%{opacity:1;}
 }
 
 /* FOOTER */
@@ -174,12 +128,6 @@ footer{
     text-align:center;
     font-size:.9em;
     color:#777;
-}
-
-/* MOBILE */
-@media(max-width:600px){
-    .logo-header{max-width:200px;}
-    header p{font-size:1em;}
 }
 </style>
 
@@ -191,13 +139,14 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 gtag('config', 'G-47ZMN7BB9T');
 </script>
+
 </head>
 
 <body>
 
 <header>
     <div class="header-box">
-        <img src="img/logo-maia-unlocker.png" alt="Maia Unlocker" class="logo-header">
+        <img src="logo-maia-unlocker.png" class="logo-header" alt="Maia Unlocker">
         <p>Venda de Acessos Premium com Qualidade e Segurança</p>
     </div>
 </header>
@@ -205,26 +154,53 @@ gtag('config', 'G-47ZMN7BB9T');
 <div class="container">
 
 <div class="box">
-<h2 style="color:#ff1e1e;margin-bottom:20px;">💎 Nossos Produtos</h2>
+<h2 style="color:#ff1e1e;margin-bottom:25px;">💎 Nossos Produtos</h2>
 
 <div class="grid-produtos">
 
-<!-- PRODUTOS (mantidos iguais ao seu original) -->
+<div class="card-produto">
+<img src="https://img.elo7.com.br/product/zoom/53A3367/aluguel-unlocktool-2h-6h-e-24h-unlocktool-chimera-contagoogle-aluguelunlocktool-boxfrp-desbloqueio-l.jpg">
+<h3>🔓 Unlock Tool</h3>
+<p class="preco-antigo">De R$ 20,00</p>
+<p class="preco-novo">Por R$ 15,00</p>
+<a href="https://mpago.la/1iM3BBJ" class="btn-checkout">🛒 Comprar</a>
+</div>
+
+<div class="card-produto">
+<img src="https://http2.mlstatic.com/D_NQ_NP_2X_664896-MLB83497527977_042025-F.webp">
+<h3>🤖 Android Multi Tool</h3>
+<p class="preco-antigo">De R$ 16,00</p>
+<p class="preco-novo">Por R$ 12,00</p>
+<a href="https://mpago.la/315fUfZ" class="btn-checkout">🛒 Comprar</a>
+</div>
+
+<div class="card-produto">
+<img src="https://cdn.dooca.store/140665/products/logo-tsm_495x495+fill_ffffff+crop_center.png">
+<h3>🧰 TSM Tool – 6h</h3>
+<p class="preco-antigo">De R$ 20,00</p>
+<p class="preco-novo">Por R$ 15,00</p>
+<a href="https://mpago.la/27LAY6V" class="btn-checkout">🛒 Comprar</a>
+</div>
+
+<div class="card-produto">
+<img src="https://http2.mlstatic.com/D_NQ_NP_2X_901867-MLB89298252993_082025-F.webp">
+<h3>🛠️ MDM FIX TOOL – 6H</h3>
+<p class="preco-antigo">De R$ 30,00</p>
+<p class="preco-novo">Por R$ 25,00</p>
+<a href="https://mpago.la/1w1fLQV" class="btn-checkout">🛒 Comprar</a>
+</div>
 
 </div>
 </div>
 
 <div class="whatsapp">
-    <h2 class="horario-atendimento">
-        ⏰ ATENDIMENTO DAS 09H às 12H e DAS 20:30 às 00:00
-    </h2><br>
-    <a href="https://wa.me/5583999648697" target="_blank">CHAMAR NO WHATSAPP</a>
+<a href="https://wa.me/5583999648697" target="_blank">CHAMAR NO WHATSAPP</a>
 </div>
 
 </div>
 
 <footer>
-    © 2025 Maia Unlocker — Todos os direitos reservados
+© 2025 Maia Unlocker — Todos os direitos reservados
 </footer>
 
 </body>
