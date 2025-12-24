@@ -6,7 +6,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <meta name="description" content="Maia Unlocker - Venda de acessos premium com qualidade e segurança.">
-<meta name="keywords" content="unlock, desbloqueio, mdm fix, unlock tool, android tool">
 
 <style>
 *{margin:0;padding:0;box-sizing:border-box;}
@@ -25,7 +24,8 @@ header{
 }
 
 .header-box{
-    display:inline-block;
+    max-width:1200px;
+    margin:0 auto;
     padding:35px 55px;
     border:3px solid #fff;
     border-radius:14px;
@@ -35,13 +35,11 @@ header{
 .logo-header{
     max-width:320px;
     width:100%;
-    height:auto;
     margin-bottom:20px;
-    filter:drop-shadow(0 0 12px rgba(255,255,255,.7));
 }
 
 header p{
-    font-size:1.3em;
+    font-size:1.2em;
     color:#ddd;
 }
 
@@ -49,7 +47,7 @@ header p{
 .container{
     max-width:1200px;
     margin:auto;
-    padding:40px 20px;
+    padding:30px 20px;
 }
 
 /* BOX */
@@ -98,6 +96,15 @@ header p{
     color:#00ff88;
 }
 
+/* CONTADOR POR PRODUTO */
+.contador-produto{
+    margin:12px 0 15px;
+    color:#ff4d4d;
+    font-weight:bold;
+    font-size:.95em;
+    text-align:center;
+}
+
 .btn-checkout{
     margin-top:auto;
     background:linear-gradient(135deg,#ff1e1e,#ff4d4d);
@@ -107,12 +114,6 @@ header p{
     text-decoration:none;
     border-radius:8px;
     font-weight:bold;
-    transition:.3s;
-}
-
-.btn-checkout:hover{
-    transform:scale(1.05);
-    box-shadow:0 0 15px rgba(255,30,30,.8);
 }
 
 /* WHATSAPP */
@@ -129,10 +130,8 @@ header p{
     font-weight:bold;
     text-decoration:none;
     border-radius:12px;
-    display:inline-block;
 }
 
-/* FOOTER */
 footer{
     background:#080808;
     padding:20px;
@@ -141,44 +140,24 @@ footer{
     color:#777;
 }
 </style>
-
-<!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-47ZMN7BB9T"></script>
-<script>
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-gtag('config', 'G-47ZMN7BB9T');
-</script>
-
 </head>
 
 <body>
 
 <header>
     <div class="header-box">
-        <img src="d5aeefad-fcbb-4d35-b65b-347a96b76305.png" class="logo-header" alt="Maia Unlocker">
+        <img src="d5aeefad-fcbb-4d35-b65b-347a96b76305.png" class="logo-header">
         <p>Venda de Acessos Premium com Qualidade e Segurança</p>
-        <p style="margin-top:15px;font-size:.9em;color:#aaa;">
+        <p style="margin-top:10px;font-size:.9em;color:#aaa;">
             🔒 Pagamentos seguros • Entrega rápida • Suporte via WhatsApp
         </p>
     </div>
 </header>
 
 <div class="container">
-
 <div class="box">
-<h2 style="color:#ff1e1e;margin-bottom:10px;">💎 Nossos Produtos</h2>
 
-<p id="contador-tempo" style="
-    color:#ff4d4d;
-    font-weight:bold;
-    margin-bottom:25px;
-    font-size:1.1em;
-">
-⏰ Oferta expira em: 02:00:00
-</p>
-
+<h2 style="color:#ff1e1e;margin-bottom:25px;">💎 Nossos Produtos</h2>
 
 <div class="grid-produtos">
 
@@ -187,6 +166,7 @@ gtag('config', 'G-47ZMN7BB9T');
 <h3>🔓 Unlock Tool - 6h</h3>
 <p class="preco-antigo">De R$ 20,00</p>
 <p class="preco-novo">Por R$ 15,00</p>
+<p class="contador-produto">⏰ Oferta expira em: 02:00:00</p>
 <a href="https://mpago.la/1iM3BBJ" class="btn-checkout">🛒 Comprar</a>
 </div>
 
@@ -195,6 +175,7 @@ gtag('config', 'G-47ZMN7BB9T');
 <h3>🤖 Android Multi Tool - 2h</h3>
 <p class="preco-antigo">De R$ 16,00</p>
 <p class="preco-novo">Por R$ 12,00</p>
+<p class="contador-produto">⏰ Oferta expira em: 02:00:00</p>
 <a href="https://mpago.la/315fUfZ" class="btn-checkout">🛒 Comprar</a>
 </div>
 
@@ -203,6 +184,7 @@ gtag('config', 'G-47ZMN7BB9T');
 <h3>🧰 TSM Tool – 6h</h3>
 <p class="preco-antigo">De R$ 20,00</p>
 <p class="preco-novo">Por R$ 15,00</p>
+<p class="contador-produto">⏰ Oferta expira em: 02:00:00</p>
 <a href="https://mpago.la/27LAY6V" class="btn-checkout">🛒 Comprar</a>
 </div>
 
@@ -211,6 +193,7 @@ gtag('config', 'G-47ZMN7BB9T');
 <h3>🛠️ MDM FIX TOOL – 6h</h3>
 <p class="preco-antigo">De R$ 30,00</p>
 <p class="preco-novo">Por R$ 25,00</p>
+<p class="contador-produto">⏰ Oferta expira em: 02:00:00</p>
 <a href="https://mpago.la/1w1fLQV" class="btn-checkout">🛒 Comprar</a>
 </div>
 
@@ -227,32 +210,25 @@ gtag('config', 'G-47ZMN7BB9T');
 © 2025 Maia Unlocker — Todos os direitos reservados
 </footer>
 
-    <script>
-let tempo = 2 * 60 * 60; // 2 horas em segundos
+<script>
+document.querySelectorAll(".contador-produto").forEach(contador => {
+    let tempo = 2 * 60 * 60;
 
-const contador = document.getElementById("contador-tempo");
+    setInterval(() => {
+        const h = Math.floor(tempo / 3600);
+        const m = Math.floor((tempo % 3600) / 60);
+        const s = tempo % 60;
 
-const timer = setInterval(() => {
-    const horas = Math.floor(tempo / 3600);
-    const minutos = Math.floor((tempo % 3600) / 60);
-    const segundos = tempo % 60;
+        contador.innerHTML = `⏰ Oferta expira em: ${String(h).padStart(2,'0')}:${String(m).padStart(2,'0')}:${String(s).padStart(2,'0')}`;
 
-    contador.innerHTML = `⏰ Oferta expira em: 
-        ${String(horas).padStart(2, '0')}:
-        ${String(minutos).padStart(2, '0')}:
-        ${String(segundos).padStart(2, '0')}`;
-
-    if (tempo <= 0) {
-        clearInterval(timer);
-        contador.innerHTML = "⛔ Oferta encerrada";
-    }
-
-    tempo--;
-}, 1000);
+        if (tempo <= 0) {
+            contador.innerHTML = "⛔ Oferta encerrada";
+            return;
+        }
+        tempo--;
+    }, 1000);
+});
 </script>
 
 </body>
 </html>
-
-
-
